@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T16:56:49.734Z",
+  "generated": "2026-06-12T17:05:42.556Z",
   "stats": {
     "totalPRs": 13,
     "avgPRAge": 6137,
@@ -45,8 +45,8 @@
       {
         "name": "apache/incubator-kie-kogito-apps",
         "count": 4,
-        "avgAge": 1436,
-        "totalHours": 5745
+        "avgAge": 1437,
+        "totalHours": 5746
       }
     ]
   },
@@ -283,9 +283,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 27,
-        "hours": 18,
+        "hours": 19,
         "formatted": "27 days",
-        "totalHours": 666
+        "totalHours": 667
       },
       "reviewers": [
         "gitgabrio",
@@ -450,9 +450,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 18,
+          "hours": 19,
           "formatted": "27 days",
-          "totalHours": 666
+          "totalHours": 667
         },
         "reviewers": [
           "gitgabrio",
@@ -497,9 +497,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 18,
+          "hours": 19,
           "formatted": "27 days",
-          "totalHours": 666
+          "totalHours": 667
         },
         "reviewers": [
           "gitgabrio",
@@ -733,9 +733,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 18,
+          "hours": 19,
           "formatted": "27 days",
-          "totalHours": 666
+          "totalHours": 667
         },
         "reviewers": [
           "gitgabrio",
@@ -1002,9 +1002,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 18,
+          "hours": 19,
           "formatted": "27 days",
-          "totalHours": 666
+          "totalHours": 667
         },
         "reviewers": [
           "gitgabrio",
@@ -1280,9 +1280,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 18,
+          "hours": 19,
           "formatted": "27 days",
-          "totalHours": 666
+          "totalHours": 667
         },
         "reviewers": [
           "gitgabrio",
@@ -1532,9 +1532,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 27,
-        "hours": 18,
+        "hours": 19,
         "formatted": "27 days",
-        "totalHours": 666
+        "totalHours": 667
       },
       "reviewers": [
         "gitgabrio",
