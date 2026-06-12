@@ -4,8 +4,8 @@ name: PR Agent
 on:
   # Run on schedule (cron format: minute hour day month weekday)
   schedule:
-    # Weekdays at 9 AM UTC (adjust for your timezone)
-    - cron: '0 9 * * 1-5'
+    # Every hour on weekdays (Monday-Friday)
+    - cron: '0 * * * 1-5'
   
   # Allow manual trigger from GitHub Actions UI
   workflow_dispatch:
