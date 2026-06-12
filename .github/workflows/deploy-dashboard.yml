@@ -1,5 +1,4 @@
-name: Deploy Dashboard to GitHub Pages
-
+name: Deploy Dashboard
 on:
   push:
     branches: [main]
