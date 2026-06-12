@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Configuration (contains sensitive data)
-config.yml
-
 # Environment variables
 .env
 .env.local
