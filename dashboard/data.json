@@ -1,8 +1,8 @@
 {
-  "generated": "2026-06-12T17:42:20.210Z",
+  "generated": "2026-06-12T19:52:45.849Z",
   "stats": {
     "totalPRs": 13,
-    "avgPRAge": 6137,
+    "avgPRAge": 6140,
     "oldestPR": {
       "number": 2932,
       "title": "KOGITO-9001 Create new addon for custom dashboard",
@@ -24,8 +24,8 @@
       },
       "age": {
         "days": 1155,
-        "hours": 3,
-        "total_hours": 27723,
+        "hours": 5,
+        "total_hours": 27725,
         "formatted": "1155 days"
       }
     },
@@ -33,20 +33,20 @@
       {
         "name": "apache/incubator-kie-drools",
         "count": 3,
-        "avgAge": 5132,
-        "totalHours": 15397
+        "avgAge": 5135,
+        "totalHours": 15404
       },
       {
         "name": "apache/incubator-kie-kogito-runtimes",
         "count": 6,
-        "avgAge": 9774,
-        "totalHours": 58642
+        "avgAge": 9776,
+        "totalHours": 58655
       },
       {
         "name": "apache/incubator-kie-kogito-apps",
         "count": 4,
-        "avgAge": 1437,
-        "totalHours": 5747
+        "avgAge": 1439,
+        "totalHours": 5757
       }
     ]
   },
@@ -59,9 +59,9 @@
       "repository": "apache/incubator-kie-drools",
       "age": {
         "days": 2,
-        "hours": 6,
+        "hours": 8,
         "formatted": "2 days",
-        "totalHours": 54
+        "totalHours": 56
       },
       "reviewers": [
         "pibizza"
@@ -80,9 +80,9 @@
       "repository": "apache/incubator-kie-drools",
       "age": {
         "days": 128,
-        "hours": 4,
+        "hours": 6,
         "formatted": "128 days",
-        "totalHours": 3076
+        "totalHours": 3078
       },
       "reviewers": [
         "pibizza",
@@ -104,9 +104,9 @@
       "repository": "apache/incubator-kie-drools",
       "age": {
         "days": 511,
-        "hours": 3,
+        "hours": 6,
         "formatted": "511 days",
-        "totalHours": 12267
+        "totalHours": 12270
       },
       "reviewers": [
         "jstastny-cz"
@@ -125,9 +125,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 18,
-        "hours": 2,
+        "hours": 4,
         "formatted": "18 days",
-        "totalHours": 434
+        "totalHours": 436
       },
       "reviewers": [
         "martinweiler"
@@ -146,9 +146,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 135,
-        "hours": 6,
+        "hours": 8,
         "formatted": "135 days",
-        "totalHours": 3246
+        "totalHours": 3248
       },
       "reviewers": [
         "martinweiler",
@@ -171,9 +171,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 150,
-        "hours": 18,
+        "hours": 21,
         "formatted": "150 days",
-        "totalHours": 3618
+        "totalHours": 3621
       },
       "reviewers": [
         "martinweiler",
@@ -195,9 +195,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 385,
-        "hours": 0,
+        "hours": 2,
         "formatted": "385 days",
-        "totalHours": 9240
+        "totalHours": 9242
       },
       "reviewers": [
         "gmunozfe",
@@ -217,9 +217,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 599,
-        "hours": 5,
+        "hours": 7,
         "formatted": "599 days",
-        "totalHours": 14381
+        "totalHours": 14383
       },
       "reviewers": [
         "baldimir"
@@ -238,9 +238,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 1155,
-        "hours": 3,
+        "hours": 5,
         "formatted": "1155 days",
-        "totalHours": 27723
+        "totalHours": 27725
       },
       "reviewers": [
         "cristianonicolai",
@@ -261,9 +261,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 17,
-        "hours": 12,
+        "hours": 14,
         "formatted": "17 days",
-        "totalHours": 420
+        "totalHours": 422
       },
       "reviewers": [
         "martinweiler",
@@ -283,9 +283,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 27,
-        "hours": 19,
+        "hours": 21,
         "formatted": "27 days",
-        "totalHours": 667
+        "totalHours": 669
       },
       "reviewers": [
         "gitgabrio",
@@ -307,9 +307,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 43,
-        "hours": 10,
+        "hours": 13,
         "formatted": "43 days",
-        "totalHours": 1042
+        "totalHours": 1045
       },
       "reviewers": [
         "pefernan"
@@ -328,9 +328,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 150,
-        "hours": 18,
+        "hours": 21,
         "formatted": "150 days",
-        "totalHours": 3618
+        "totalHours": 3621
       },
       "reviewers": [
         "martinweiler",
@@ -354,9 +354,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 128,
-          "hours": 4,
+          "hours": 6,
           "formatted": "128 days",
-          "totalHours": 3076
+          "totalHours": 3078
         },
         "reviewers": [
           "pibizza",
@@ -378,9 +378,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 2,
-          "hours": 6,
+          "hours": 8,
           "formatted": "2 days",
-          "totalHours": 54
+          "totalHours": 56
         },
         "reviewers": [
           "pibizza"
@@ -401,9 +401,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 135,
-          "hours": 6,
+          "hours": 8,
           "formatted": "135 days",
-          "totalHours": 3246
+          "totalHours": 3248
         },
         "reviewers": [
           "martinweiler",
@@ -426,9 +426,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 128,
-          "hours": 4,
+          "hours": 6,
           "formatted": "128 days",
-          "totalHours": 3076
+          "totalHours": 3078
         },
         "reviewers": [
           "pibizza",
@@ -450,9 +450,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 19,
+          "hours": 21,
           "formatted": "27 days",
-          "totalHours": 667
+          "totalHours": 669
         },
         "reviewers": [
           "gitgabrio",
@@ -476,9 +476,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 511,
-          "hours": 3,
+          "hours": 6,
           "formatted": "511 days",
-          "totalHours": 12267
+          "totalHours": 12270
         },
         "reviewers": [
           "jstastny-cz"
@@ -497,9 +497,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 19,
+          "hours": 21,
           "formatted": "27 days",
-          "totalHours": 667
+          "totalHours": 669
         },
         "reviewers": [
           "gitgabrio",
@@ -523,9 +523,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -547,9 +547,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -570,9 +570,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 135,
-          "hours": 6,
+          "hours": 8,
           "formatted": "135 days",
-          "totalHours": 3246
+          "totalHours": 3248
         },
         "reviewers": [
           "martinweiler",
@@ -595,9 +595,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 18,
-          "hours": 2,
+          "hours": 4,
           "formatted": "18 days",
-          "totalHours": 434
+          "totalHours": 436
         },
         "reviewers": [
           "martinweiler"
@@ -616,9 +616,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 17,
-          "hours": 12,
+          "hours": 14,
           "formatted": "17 days",
-          "totalHours": 420
+          "totalHours": 422
         },
         "reviewers": [
           "martinweiler",
@@ -640,9 +640,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -664,9 +664,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -687,9 +687,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 135,
-          "hours": 6,
+          "hours": 8,
           "formatted": "135 days",
-          "totalHours": 3246
+          "totalHours": 3248
         },
         "reviewers": [
           "martinweiler",
@@ -712,9 +712,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 43,
-          "hours": 10,
+          "hours": 13,
           "formatted": "43 days",
-          "totalHours": 1042
+          "totalHours": 1045
         },
         "reviewers": [
           "pefernan"
@@ -733,9 +733,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 19,
+          "hours": 21,
           "formatted": "27 days",
-          "totalHours": 667
+          "totalHours": 669
         },
         "reviewers": [
           "gitgabrio",
@@ -757,9 +757,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 17,
-          "hours": 12,
+          "hours": 14,
           "formatted": "17 days",
-          "totalHours": 420
+          "totalHours": 422
         },
         "reviewers": [
           "martinweiler",
@@ -781,9 +781,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -805,9 +805,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -830,9 +830,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -856,9 +856,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 385,
-          "hours": 0,
+          "hours": 2,
           "formatted": "385 days",
-          "totalHours": 9240
+          "totalHours": 9242
         },
         "reviewers": [
           "gmunozfe",
@@ -880,9 +880,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 385,
-          "hours": 0,
+          "hours": 2,
           "formatted": "385 days",
-          "totalHours": 9240
+          "totalHours": 9242
         },
         "reviewers": [
           "gmunozfe",
@@ -904,9 +904,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 599,
-          "hours": 5,
+          "hours": 7,
           "formatted": "599 days",
-          "totalHours": 14381
+          "totalHours": 14383
         },
         "reviewers": [
           "baldimir"
@@ -927,9 +927,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 1155,
-          "hours": 3,
+          "hours": 5,
           "formatted": "1155 days",
-          "totalHours": 27723
+          "totalHours": 27725
         },
         "reviewers": [
           "cristianonicolai",
@@ -952,9 +952,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 1155,
-          "hours": 3,
+          "hours": 5,
           "formatted": "1155 days",
-          "totalHours": 27723
+          "totalHours": 27725
         },
         "reviewers": [
           "cristianonicolai",
@@ -977,9 +977,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 1155,
-          "hours": 3,
+          "hours": 5,
           "formatted": "1155 days",
-          "totalHours": 27723
+          "totalHours": 27725
         },
         "reviewers": [
           "cristianonicolai",
@@ -1002,9 +1002,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 19,
+          "hours": 21,
           "formatted": "27 days",
-          "totalHours": 667
+          "totalHours": 669
         },
         "reviewers": [
           "gitgabrio",
@@ -1030,9 +1030,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 511,
-          "hours": 3,
+          "hours": 6,
           "formatted": "511 days",
-          "totalHours": 12267
+          "totalHours": 12270
         },
         "reviewers": [
           "jstastny-cz"
@@ -1051,9 +1051,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 128,
-          "hours": 4,
+          "hours": 6,
           "formatted": "128 days",
-          "totalHours": 3076
+          "totalHours": 3078
         },
         "reviewers": [
           "pibizza",
@@ -1075,9 +1075,9 @@
         "repository": "apache/incubator-kie-drools",
         "age": {
           "days": 2,
-          "hours": 6,
+          "hours": 8,
           "formatted": "2 days",
-          "totalHours": 54
+          "totalHours": 56
         },
         "reviewers": [
           "pibizza"
@@ -1098,9 +1098,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 1155,
-          "hours": 3,
+          "hours": 5,
           "formatted": "1155 days",
-          "totalHours": 27723
+          "totalHours": 27725
         },
         "reviewers": [
           "cristianonicolai",
@@ -1121,9 +1121,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 599,
-          "hours": 5,
+          "hours": 7,
           "formatted": "599 days",
-          "totalHours": 14381
+          "totalHours": 14383
         },
         "reviewers": [
           "baldimir"
@@ -1142,9 +1142,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 385,
-          "hours": 0,
+          "hours": 2,
           "formatted": "385 days",
-          "totalHours": 9240
+          "totalHours": 9242
         },
         "reviewers": [
           "gmunozfe",
@@ -1164,9 +1164,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -1188,9 +1188,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 135,
-          "hours": 6,
+          "hours": 8,
           "formatted": "135 days",
-          "totalHours": 3246
+          "totalHours": 3248
         },
         "reviewers": [
           "martinweiler",
@@ -1213,9 +1213,9 @@
         "repository": "apache/incubator-kie-kogito-runtimes",
         "age": {
           "days": 18,
-          "hours": 2,
+          "hours": 4,
           "formatted": "18 days",
-          "totalHours": 434
+          "totalHours": 436
         },
         "reviewers": [
           "martinweiler"
@@ -1236,9 +1236,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 150,
-          "hours": 18,
+          "hours": 21,
           "formatted": "150 days",
-          "totalHours": 3618
+          "totalHours": 3621
         },
         "reviewers": [
           "martinweiler",
@@ -1259,9 +1259,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 43,
-          "hours": 10,
+          "hours": 13,
           "formatted": "43 days",
-          "totalHours": 1042
+          "totalHours": 1045
         },
         "reviewers": [
           "pefernan"
@@ -1280,9 +1280,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 27,
-          "hours": 19,
+          "hours": 21,
           "formatted": "27 days",
-          "totalHours": 667
+          "totalHours": 669
         },
         "reviewers": [
           "gitgabrio",
@@ -1304,9 +1304,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 17,
-          "hours": 12,
+          "hours": 14,
           "formatted": "17 days",
-          "totalHours": 420
+          "totalHours": 422
         },
         "reviewers": [
           "martinweiler",
@@ -1329,9 +1329,9 @@
       "repository": "apache/incubator-kie-drools",
       "age": {
         "days": 128,
-        "hours": 4,
+        "hours": 6,
         "formatted": "128 days",
-        "totalHours": 3076
+        "totalHours": 3078
       },
       "reviewers": [
         "pibizza",
@@ -1353,9 +1353,9 @@
       "repository": "apache/incubator-kie-drools",
       "age": {
         "days": 511,
-        "hours": 3,
+        "hours": 6,
         "formatted": "511 days",
-        "totalHours": 12267
+        "totalHours": 12270
       },
       "reviewers": [
         "jstastny-cz"
@@ -1374,9 +1374,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 18,
-        "hours": 2,
+        "hours": 4,
         "formatted": "18 days",
-        "totalHours": 434
+        "totalHours": 436
       },
       "reviewers": [
         "martinweiler"
@@ -1395,9 +1395,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 135,
-        "hours": 6,
+        "hours": 8,
         "formatted": "135 days",
-        "totalHours": 3246
+        "totalHours": 3248
       },
       "reviewers": [
         "martinweiler",
@@ -1420,9 +1420,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 150,
-        "hours": 18,
+        "hours": 21,
         "formatted": "150 days",
-        "totalHours": 3618
+        "totalHours": 3621
       },
       "reviewers": [
         "martinweiler",
@@ -1444,9 +1444,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 385,
-        "hours": 0,
+        "hours": 2,
         "formatted": "385 days",
-        "totalHours": 9240
+        "totalHours": 9242
       },
       "reviewers": [
         "gmunozfe",
@@ -1466,9 +1466,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 599,
-        "hours": 5,
+        "hours": 7,
         "formatted": "599 days",
-        "totalHours": 14381
+        "totalHours": 14383
       },
       "reviewers": [
         "baldimir"
@@ -1487,9 +1487,9 @@
       "repository": "apache/incubator-kie-kogito-runtimes",
       "age": {
         "days": 1155,
-        "hours": 3,
+        "hours": 5,
         "formatted": "1155 days",
-        "totalHours": 27723
+        "totalHours": 27725
       },
       "reviewers": [
         "cristianonicolai",
@@ -1510,9 +1510,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 17,
-        "hours": 12,
+        "hours": 14,
         "formatted": "17 days",
-        "totalHours": 420
+        "totalHours": 422
       },
       "reviewers": [
         "martinweiler",
@@ -1532,9 +1532,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 27,
-        "hours": 19,
+        "hours": 21,
         "formatted": "27 days",
-        "totalHours": 667
+        "totalHours": 669
       },
       "reviewers": [
         "gitgabrio",
@@ -1556,9 +1556,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 43,
-        "hours": 10,
+        "hours": 13,
         "formatted": "43 days",
-        "totalHours": 1042
+        "totalHours": 1045
       },
       "reviewers": [
         "pefernan"
@@ -1577,9 +1577,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 150,
-        "hours": 18,
+        "hours": 21,
         "formatted": "150 days",
-        "totalHours": 3618
+        "totalHours": 3621
       },
       "reviewers": [
         "martinweiler",
