@@ -8,6 +8,16 @@
  * Find reviewer information from config
  */
 function findReviewerInfo(githubUsername, config) {
+  // Safety check: if reviewers array doesn't exist or is empty
+  if (!config.reviewers || !Array.isArray(config.reviewers) || config.reviewers.length === 0) {
+    return {
+      github_username: githubUsername,
+      slack_id: null,
+      email: null,
+      name: githubUsername
+    };
+  }
+  
   const reviewer = config.reviewers.find(
     r => r.github_username.toLowerCase() === githubUsername.toLowerCase()
   );
