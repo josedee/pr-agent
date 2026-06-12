@@ -1,0 +1,1686 @@
+{
+  "generated": "2026-06-12T04:58:21.930Z",
+  "stats": {
+    "totalPRs": 14,
+    "avgPRAge": 5690,
+    "oldestPR": {
+      "number": 2932,
+      "title": "KOGITO-9001 Create new addon for custom dashboard",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+      "author": "bxf12315",
+      "created_at": "2023-04-14T14:28:21Z",
+      "updated_at": "2023-04-24T07:33:21Z",
+      "draft": false,
+      "labels": [],
+      "requested_reviewers": [
+        "cristianonicolai",
+        "paulovmr",
+        "nmirasch"
+      ],
+      "repository": {
+        "owner": "apache",
+        "name": "incubator-kie-kogito-runtimes",
+        "full_name": "apache/incubator-kie-kogito-runtimes"
+      },
+      "age": {
+        "days": 1154,
+        "hours": 14,
+        "total_hours": 27710,
+        "formatted": "1154 days"
+      }
+    },
+    "repositories": [
+      {
+        "name": "apache/incubator-kie-drools",
+        "count": 3,
+        "avgAge": 5120,
+        "totalHours": 15359
+      },
+      {
+        "name": "apache/incubator-kie-kogito-runtimes",
+        "count": 7,
+        "avgAge": 8372,
+        "totalHours": 58607
+      },
+      {
+        "name": "apache/incubator-kie-kogito-apps",
+        "count": 4,
+        "avgAge": 1424,
+        "totalHours": 5697
+      }
+    ]
+  },
+  "prs": [
+    {
+      "number": 6756,
+      "title": "fix(drools-core): guard subnetwork-not right-delete against phantom-delete NPE",
+      "url": "https://github.com/apache/incubator-kie-drools/pull/6756",
+      "author": "Rikkola",
+      "repository": "apache/incubator-kie-drools",
+      "age": {
+        "days": 1,
+        "hours": 17,
+        "formatted": "1 day",
+        "totalHours": 41
+      },
+      "reviewers": [
+        "pibizza"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-06-10T11:21:52Z",
+      "updatedAt": "2026-06-11T09:14:03Z",
+      "priority": "medium"
+    },
+    {
+      "number": 6584,
+      "title": "[kie-issues#2110] BiLinear join node",
+      "url": "https://github.com/apache/incubator-kie-drools/pull/6584",
+      "author": "Rikkola",
+      "repository": "apache/incubator-kie-drools",
+      "age": {
+        "days": 127,
+        "hours": 15,
+        "formatted": "127 days",
+        "totalHours": 3063
+      },
+      "reviewers": [
+        "pibizza",
+        "yesamer"
+      ],
+      "labels": [
+        "Rules"
+      ],
+      "draft": false,
+      "createdAt": "2026-02-04T13:37:59Z",
+      "updatedAt": "2026-03-30T12:10:48Z",
+      "priority": "critical"
+    },
+    {
+      "number": 6222,
+      "title": "Reactivate turtle tests",
+      "url": "https://github.com/apache/incubator-kie-drools/pull/6222",
+      "author": "pibizza",
+      "repository": "apache/incubator-kie-drools",
+      "age": {
+        "days": 510,
+        "hours": 15,
+        "formatted": "510 days",
+        "totalHours": 12255
+      },
+      "reviewers": [
+        "jstastny-cz"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2025-01-17T13:44:47Z",
+      "updatedAt": "2026-01-05T16:04:26Z",
+      "priority": "critical"
+    },
+    {
+      "number": 4315,
+      "title": "[incubator-kie-issues#2339] NPE in `JDBCProcessInstances.` when retriggering `CallActivity` nodes with `waitForCompletion=true`",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4315",
+      "author": "pefernan",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 1,
+        "hours": 18,
+        "formatted": "1 day",
+        "totalHours": 42
+      },
+      "reviewers": [
+        "martinweiler",
+        "cimbalek"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-06-10T10:26:38Z",
+      "updatedAt": "2026-06-12T03:44:29Z",
+      "priority": "medium"
+    },
+    {
+      "number": 4303,
+      "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4303",
+      "author": "josedee",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 17,
+        "hours": 13,
+        "formatted": "17 days",
+        "totalHours": 421
+      },
+      "reviewers": [
+        "martinweiler"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-05-25T15:39:11Z",
+      "updatedAt": "2026-06-09T11:01:10Z",
+      "priority": "critical"
+    },
+    {
+      "number": 4176,
+      "title": "[incubator-kie-issues#2229] Codegen refactoring to fix \"Code too large\" error for large projects",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4176",
+      "author": "mumi",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 134,
+        "hours": 17,
+        "formatted": "134 days",
+        "totalHours": 3233
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan",
+        "yesamer"
+      ],
+      "labels": [
+        "Do not merge"
+      ],
+      "draft": false,
+      "createdAt": "2026-01-28T11:14:57Z",
+      "updatedAt": "2026-03-26T10:20:30Z",
+      "priority": "critical"
+    },
+    {
+      "number": 4165,
+      "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+      "author": "porcelli",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 150,
+        "hours": 6,
+        "formatted": "150 days",
+        "totalHours": 3606
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan",
+        "RishiRajAnand",
+        "fjtirado"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-01-12T22:45:20Z",
+      "updatedAt": "2026-02-04T04:15:13Z",
+      "priority": "critical"
+    },
+    {
+      "number": 3939,
+      "title": " Issue-3938 Upgrade the Knative custom functions to have visibility over the returned status code and headers",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3939",
+      "author": "oEscal",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 384,
+        "hours": 11,
+        "formatted": "384 days",
+        "totalHours": 9227
+      },
+      "reviewers": [
+        "gmunozfe",
+        "wmedvede"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2025-05-23T17:38:57Z",
+      "updatedAt": "2026-04-08T13:18:28Z",
+      "priority": "critical"
+    },
+    {
+      "number": 3742,
+      "title": "[incubator-kie-issues-1553] Centralize shared vars for different Github actions workflows",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3742",
+      "author": "gmunozfe",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 598,
+        "hours": 16,
+        "formatted": "598 days",
+        "totalHours": 14368
+      },
+      "reviewers": [
+        "baldimir"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2024-10-21T12:13:13Z",
+      "updatedAt": "2025-11-03T21:00:34Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2932,
+      "title": "KOGITO-9001 Create new addon for custom dashboard",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+      "author": "bxf12315",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 1154,
+        "hours": 14,
+        "formatted": "1154 days",
+        "totalHours": 27710
+      },
+      "reviewers": [
+        "cristianonicolai",
+        "paulovmr",
+        "nmirasch"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2023-04-14T14:28:21Z",
+      "updatedAt": "2023-04-24T07:33:21Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2339,
+      "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2339",
+      "author": "josedee",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 16,
+        "hours": 23,
+        "formatted": "16 days",
+        "totalHours": 407
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-05-26T05:10:01Z",
+      "updatedAt": "2026-06-10T15:01:01Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2335,
+      "title": "[INFRA] Set up default rulesets for default and release branches",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+      "author": "asf-gitbox-commits",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 27,
+        "hours": 6,
+        "formatted": "27 days",
+        "totalHours": 654
+      },
+      "reviewers": [
+        "gitgabrio",
+        "pefernan",
+        "jstastny-cz",
+        "yesamer"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-05-15T22:03:12Z",
+      "updatedAt": "2026-05-19T08:32:54Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2328,
+      "title": "[Incubator-kie-issues#2323] Allow filtering schema on nested arrays",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2328",
+      "author": "GopikaReghunath",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 42,
+        "hours": 22,
+        "formatted": "42 days",
+        "totalHours": 1030
+      },
+      "reviewers": [
+        "pefernan"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-04-30T06:51:13Z",
+      "updatedAt": "2026-06-09T08:06:01Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2297,
+      "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2297",
+      "author": "porcelli",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 150,
+        "hours": 6,
+        "formatted": "150 days",
+        "totalHours": 3606
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan",
+        "RishiRajAnand"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-01-12T22:45:28Z",
+      "updatedAt": "2026-02-04T09:18:26Z",
+      "priority": "critical"
+    }
+  ],
+  "prsByReviewer": {
+    "pibizza": [
+      {
+        "number": 6584,
+        "title": "[kie-issues#2110] BiLinear join node",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6584",
+        "author": "Rikkola",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 127,
+          "hours": 15,
+          "formatted": "127 days",
+          "totalHours": 3063
+        },
+        "reviewers": [
+          "pibizza",
+          "yesamer"
+        ],
+        "labels": [
+          "Rules"
+        ],
+        "draft": false,
+        "createdAt": "2026-02-04T13:37:59Z",
+        "updatedAt": "2026-03-30T12:10:48Z",
+        "priority": "critical"
+      },
+      {
+        "number": 6756,
+        "title": "fix(drools-core): guard subnetwork-not right-delete against phantom-delete NPE",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6756",
+        "author": "Rikkola",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 1,
+          "hours": 17,
+          "formatted": "1 day",
+          "totalHours": 41
+        },
+        "reviewers": [
+          "pibizza"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-06-10T11:21:52Z",
+        "updatedAt": "2026-06-11T09:14:03Z",
+        "priority": "medium"
+      }
+    ],
+    "yesamer": [
+      {
+        "number": 4176,
+        "title": "[incubator-kie-issues#2229] Codegen refactoring to fix \"Code too large\" error for large projects",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4176",
+        "author": "mumi",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 134,
+          "hours": 17,
+          "formatted": "134 days",
+          "totalHours": 3233
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "yesamer"
+        ],
+        "labels": [
+          "Do not merge"
+        ],
+        "draft": false,
+        "createdAt": "2026-01-28T11:14:57Z",
+        "updatedAt": "2026-03-26T10:20:30Z",
+        "priority": "critical"
+      },
+      {
+        "number": 6584,
+        "title": "[kie-issues#2110] BiLinear join node",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6584",
+        "author": "Rikkola",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 127,
+          "hours": 15,
+          "formatted": "127 days",
+          "totalHours": 3063
+        },
+        "reviewers": [
+          "pibizza",
+          "yesamer"
+        ],
+        "labels": [
+          "Rules"
+        ],
+        "draft": false,
+        "createdAt": "2026-02-04T13:37:59Z",
+        "updatedAt": "2026-03-30T12:10:48Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2335,
+        "title": "[INFRA] Set up default rulesets for default and release branches",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+        "author": "asf-gitbox-commits",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 27,
+          "hours": 6,
+          "formatted": "27 days",
+          "totalHours": 654
+        },
+        "reviewers": [
+          "gitgabrio",
+          "pefernan",
+          "jstastny-cz",
+          "yesamer"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-15T22:03:12Z",
+        "updatedAt": "2026-05-19T08:32:54Z",
+        "priority": "critical"
+      }
+    ],
+    "jstastny-cz": [
+      {
+        "number": 6222,
+        "title": "Reactivate turtle tests",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6222",
+        "author": "pibizza",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 510,
+          "hours": 15,
+          "formatted": "510 days",
+          "totalHours": 12255
+        },
+        "reviewers": [
+          "jstastny-cz"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2025-01-17T13:44:47Z",
+        "updatedAt": "2026-01-05T16:04:26Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2335,
+        "title": "[INFRA] Set up default rulesets for default and release branches",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+        "author": "asf-gitbox-commits",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 27,
+          "hours": 6,
+          "formatted": "27 days",
+          "totalHours": 654
+        },
+        "reviewers": [
+          "gitgabrio",
+          "pefernan",
+          "jstastny-cz",
+          "yesamer"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-15T22:03:12Z",
+        "updatedAt": "2026-05-19T08:32:54Z",
+        "priority": "critical"
+      }
+    ],
+    "martinweiler": [
+      {
+        "number": 4165,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand",
+          "fjtirado"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:20Z",
+        "updatedAt": "2026-02-04T04:15:13Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2297,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2297",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:28Z",
+        "updatedAt": "2026-02-04T09:18:26Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4176,
+        "title": "[incubator-kie-issues#2229] Codegen refactoring to fix \"Code too large\" error for large projects",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4176",
+        "author": "mumi",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 134,
+          "hours": 17,
+          "formatted": "134 days",
+          "totalHours": 3233
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "yesamer"
+        ],
+        "labels": [
+          "Do not merge"
+        ],
+        "draft": false,
+        "createdAt": "2026-01-28T11:14:57Z",
+        "updatedAt": "2026-03-26T10:20:30Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4303,
+        "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4303",
+        "author": "josedee",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 17,
+          "hours": 13,
+          "formatted": "17 days",
+          "totalHours": 421
+        },
+        "reviewers": [
+          "martinweiler"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-25T15:39:11Z",
+        "updatedAt": "2026-06-09T11:01:10Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2339,
+        "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2339",
+        "author": "josedee",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 16,
+          "hours": 23,
+          "formatted": "16 days",
+          "totalHours": 407
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-26T05:10:01Z",
+        "updatedAt": "2026-06-10T15:01:01Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4315,
+        "title": "[incubator-kie-issues#2339] NPE in `JDBCProcessInstances.` when retriggering `CallActivity` nodes with `waitForCompletion=true`",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4315",
+        "author": "pefernan",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1,
+          "hours": 18,
+          "formatted": "1 day",
+          "totalHours": 42
+        },
+        "reviewers": [
+          "martinweiler",
+          "cimbalek"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-06-10T10:26:38Z",
+        "updatedAt": "2026-06-12T03:44:29Z",
+        "priority": "medium"
+      }
+    ],
+    "cimbalek": [
+      {
+        "number": 4315,
+        "title": "[incubator-kie-issues#2339] NPE in `JDBCProcessInstances.` when retriggering `CallActivity` nodes with `waitForCompletion=true`",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4315",
+        "author": "pefernan",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1,
+          "hours": 18,
+          "formatted": "1 day",
+          "totalHours": 42
+        },
+        "reviewers": [
+          "martinweiler",
+          "cimbalek"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-06-10T10:26:38Z",
+        "updatedAt": "2026-06-12T03:44:29Z",
+        "priority": "medium"
+      }
+    ],
+    "pefernan": [
+      {
+        "number": 4165,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand",
+          "fjtirado"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:20Z",
+        "updatedAt": "2026-02-04T04:15:13Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2297,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2297",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:28Z",
+        "updatedAt": "2026-02-04T09:18:26Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4176,
+        "title": "[incubator-kie-issues#2229] Codegen refactoring to fix \"Code too large\" error for large projects",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4176",
+        "author": "mumi",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 134,
+          "hours": 17,
+          "formatted": "134 days",
+          "totalHours": 3233
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "yesamer"
+        ],
+        "labels": [
+          "Do not merge"
+        ],
+        "draft": false,
+        "createdAt": "2026-01-28T11:14:57Z",
+        "updatedAt": "2026-03-26T10:20:30Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2328,
+        "title": "[Incubator-kie-issues#2323] Allow filtering schema on nested arrays",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2328",
+        "author": "GopikaReghunath",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 42,
+          "hours": 22,
+          "formatted": "42 days",
+          "totalHours": 1030
+        },
+        "reviewers": [
+          "pefernan"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-04-30T06:51:13Z",
+        "updatedAt": "2026-06-09T08:06:01Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2335,
+        "title": "[INFRA] Set up default rulesets for default and release branches",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+        "author": "asf-gitbox-commits",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 27,
+          "hours": 6,
+          "formatted": "27 days",
+          "totalHours": 654
+        },
+        "reviewers": [
+          "gitgabrio",
+          "pefernan",
+          "jstastny-cz",
+          "yesamer"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-15T22:03:12Z",
+        "updatedAt": "2026-05-19T08:32:54Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2339,
+        "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2339",
+        "author": "josedee",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 16,
+          "hours": 23,
+          "formatted": "16 days",
+          "totalHours": 407
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-26T05:10:01Z",
+        "updatedAt": "2026-06-10T15:01:01Z",
+        "priority": "critical"
+      }
+    ],
+    "RishiRajAnand": [
+      {
+        "number": 4165,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand",
+          "fjtirado"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:20Z",
+        "updatedAt": "2026-02-04T04:15:13Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2297,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2297",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:28Z",
+        "updatedAt": "2026-02-04T09:18:26Z",
+        "priority": "critical"
+      }
+    ],
+    "fjtirado": [
+      {
+        "number": 4165,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand",
+          "fjtirado"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:20Z",
+        "updatedAt": "2026-02-04T04:15:13Z",
+        "priority": "critical"
+      }
+    ],
+    "gmunozfe": [
+      {
+        "number": 3939,
+        "title": " Issue-3938 Upgrade the Knative custom functions to have visibility over the returned status code and headers",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3939",
+        "author": "oEscal",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 384,
+          "hours": 11,
+          "formatted": "384 days",
+          "totalHours": 9227
+        },
+        "reviewers": [
+          "gmunozfe",
+          "wmedvede"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2025-05-23T17:38:57Z",
+        "updatedAt": "2026-04-08T13:18:28Z",
+        "priority": "critical"
+      }
+    ],
+    "wmedvede": [
+      {
+        "number": 3939,
+        "title": " Issue-3938 Upgrade the Knative custom functions to have visibility over the returned status code and headers",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3939",
+        "author": "oEscal",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 384,
+          "hours": 11,
+          "formatted": "384 days",
+          "totalHours": 9227
+        },
+        "reviewers": [
+          "gmunozfe",
+          "wmedvede"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2025-05-23T17:38:57Z",
+        "updatedAt": "2026-04-08T13:18:28Z",
+        "priority": "critical"
+      }
+    ],
+    "baldimir": [
+      {
+        "number": 3742,
+        "title": "[incubator-kie-issues-1553] Centralize shared vars for different Github actions workflows",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3742",
+        "author": "gmunozfe",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 598,
+          "hours": 16,
+          "formatted": "598 days",
+          "totalHours": 14368
+        },
+        "reviewers": [
+          "baldimir"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2024-10-21T12:13:13Z",
+        "updatedAt": "2025-11-03T21:00:34Z",
+        "priority": "critical"
+      }
+    ],
+    "cristianonicolai": [
+      {
+        "number": 2932,
+        "title": "KOGITO-9001 Create new addon for custom dashboard",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+        "author": "bxf12315",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1154,
+          "hours": 14,
+          "formatted": "1154 days",
+          "totalHours": 27710
+        },
+        "reviewers": [
+          "cristianonicolai",
+          "paulovmr",
+          "nmirasch"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2023-04-14T14:28:21Z",
+        "updatedAt": "2023-04-24T07:33:21Z",
+        "priority": "critical"
+      }
+    ],
+    "paulovmr": [
+      {
+        "number": 2932,
+        "title": "KOGITO-9001 Create new addon for custom dashboard",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+        "author": "bxf12315",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1154,
+          "hours": 14,
+          "formatted": "1154 days",
+          "totalHours": 27710
+        },
+        "reviewers": [
+          "cristianonicolai",
+          "paulovmr",
+          "nmirasch"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2023-04-14T14:28:21Z",
+        "updatedAt": "2023-04-24T07:33:21Z",
+        "priority": "critical"
+      }
+    ],
+    "nmirasch": [
+      {
+        "number": 2932,
+        "title": "KOGITO-9001 Create new addon for custom dashboard",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+        "author": "bxf12315",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1154,
+          "hours": 14,
+          "formatted": "1154 days",
+          "totalHours": 27710
+        },
+        "reviewers": [
+          "cristianonicolai",
+          "paulovmr",
+          "nmirasch"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2023-04-14T14:28:21Z",
+        "updatedAt": "2023-04-24T07:33:21Z",
+        "priority": "critical"
+      }
+    ],
+    "gitgabrio": [
+      {
+        "number": 2335,
+        "title": "[INFRA] Set up default rulesets for default and release branches",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+        "author": "asf-gitbox-commits",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 27,
+          "hours": 6,
+          "formatted": "27 days",
+          "totalHours": 654
+        },
+        "reviewers": [
+          "gitgabrio",
+          "pefernan",
+          "jstastny-cz",
+          "yesamer"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-15T22:03:12Z",
+        "updatedAt": "2026-05-19T08:32:54Z",
+        "priority": "critical"
+      }
+    ]
+  },
+  "prsByRepository": {
+    "apache/incubator-kie-drools": [
+      {
+        "number": 6222,
+        "title": "Reactivate turtle tests",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6222",
+        "author": "pibizza",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 510,
+          "hours": 15,
+          "formatted": "510 days",
+          "totalHours": 12255
+        },
+        "reviewers": [
+          "jstastny-cz"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2025-01-17T13:44:47Z",
+        "updatedAt": "2026-01-05T16:04:26Z",
+        "priority": "critical"
+      },
+      {
+        "number": 6584,
+        "title": "[kie-issues#2110] BiLinear join node",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6584",
+        "author": "Rikkola",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 127,
+          "hours": 15,
+          "formatted": "127 days",
+          "totalHours": 3063
+        },
+        "reviewers": [
+          "pibizza",
+          "yesamer"
+        ],
+        "labels": [
+          "Rules"
+        ],
+        "draft": false,
+        "createdAt": "2026-02-04T13:37:59Z",
+        "updatedAt": "2026-03-30T12:10:48Z",
+        "priority": "critical"
+      },
+      {
+        "number": 6756,
+        "title": "fix(drools-core): guard subnetwork-not right-delete against phantom-delete NPE",
+        "url": "https://github.com/apache/incubator-kie-drools/pull/6756",
+        "author": "Rikkola",
+        "repository": "apache/incubator-kie-drools",
+        "age": {
+          "days": 1,
+          "hours": 17,
+          "formatted": "1 day",
+          "totalHours": 41
+        },
+        "reviewers": [
+          "pibizza"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-06-10T11:21:52Z",
+        "updatedAt": "2026-06-11T09:14:03Z",
+        "priority": "medium"
+      }
+    ],
+    "apache/incubator-kie-kogito-runtimes": [
+      {
+        "number": 2932,
+        "title": "KOGITO-9001 Create new addon for custom dashboard",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+        "author": "bxf12315",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1154,
+          "hours": 14,
+          "formatted": "1154 days",
+          "totalHours": 27710
+        },
+        "reviewers": [
+          "cristianonicolai",
+          "paulovmr",
+          "nmirasch"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2023-04-14T14:28:21Z",
+        "updatedAt": "2023-04-24T07:33:21Z",
+        "priority": "critical"
+      },
+      {
+        "number": 3742,
+        "title": "[incubator-kie-issues-1553] Centralize shared vars for different Github actions workflows",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3742",
+        "author": "gmunozfe",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 598,
+          "hours": 16,
+          "formatted": "598 days",
+          "totalHours": 14368
+        },
+        "reviewers": [
+          "baldimir"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2024-10-21T12:13:13Z",
+        "updatedAt": "2025-11-03T21:00:34Z",
+        "priority": "critical"
+      },
+      {
+        "number": 3939,
+        "title": " Issue-3938 Upgrade the Knative custom functions to have visibility over the returned status code and headers",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3939",
+        "author": "oEscal",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 384,
+          "hours": 11,
+          "formatted": "384 days",
+          "totalHours": 9227
+        },
+        "reviewers": [
+          "gmunozfe",
+          "wmedvede"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2025-05-23T17:38:57Z",
+        "updatedAt": "2026-04-08T13:18:28Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4165,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand",
+          "fjtirado"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:20Z",
+        "updatedAt": "2026-02-04T04:15:13Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4176,
+        "title": "[incubator-kie-issues#2229] Codegen refactoring to fix \"Code too large\" error for large projects",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4176",
+        "author": "mumi",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 134,
+          "hours": 17,
+          "formatted": "134 days",
+          "totalHours": 3233
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "yesamer"
+        ],
+        "labels": [
+          "Do not merge"
+        ],
+        "draft": false,
+        "createdAt": "2026-01-28T11:14:57Z",
+        "updatedAt": "2026-03-26T10:20:30Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4303,
+        "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4303",
+        "author": "josedee",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 17,
+          "hours": 13,
+          "formatted": "17 days",
+          "totalHours": 421
+        },
+        "reviewers": [
+          "martinweiler"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-25T15:39:11Z",
+        "updatedAt": "2026-06-09T11:01:10Z",
+        "priority": "critical"
+      },
+      {
+        "number": 4315,
+        "title": "[incubator-kie-issues#2339] NPE in `JDBCProcessInstances.` when retriggering `CallActivity` nodes with `waitForCompletion=true`",
+        "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4315",
+        "author": "pefernan",
+        "repository": "apache/incubator-kie-kogito-runtimes",
+        "age": {
+          "days": 1,
+          "hours": 18,
+          "formatted": "1 day",
+          "totalHours": 42
+        },
+        "reviewers": [
+          "martinweiler",
+          "cimbalek"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-06-10T10:26:38Z",
+        "updatedAt": "2026-06-12T03:44:29Z",
+        "priority": "medium"
+      }
+    ],
+    "apache/incubator-kie-kogito-apps": [
+      {
+        "number": 2297,
+        "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2297",
+        "author": "porcelli",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 150,
+          "hours": 6,
+          "formatted": "150 days",
+          "totalHours": 3606
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan",
+          "RishiRajAnand"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-01-12T22:45:28Z",
+        "updatedAt": "2026-02-04T09:18:26Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2328,
+        "title": "[Incubator-kie-issues#2323] Allow filtering schema on nested arrays",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2328",
+        "author": "GopikaReghunath",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 42,
+          "hours": 22,
+          "formatted": "42 days",
+          "totalHours": 1030
+        },
+        "reviewers": [
+          "pefernan"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-04-30T06:51:13Z",
+        "updatedAt": "2026-06-09T08:06:01Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2335,
+        "title": "[INFRA] Set up default rulesets for default and release branches",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+        "author": "asf-gitbox-commits",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 27,
+          "hours": 6,
+          "formatted": "27 days",
+          "totalHours": 654
+        },
+        "reviewers": [
+          "gitgabrio",
+          "pefernan",
+          "jstastny-cz",
+          "yesamer"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-15T22:03:12Z",
+        "updatedAt": "2026-05-19T08:32:54Z",
+        "priority": "critical"
+      },
+      {
+        "number": 2339,
+        "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+        "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2339",
+        "author": "josedee",
+        "repository": "apache/incubator-kie-kogito-apps",
+        "age": {
+          "days": 16,
+          "hours": 23,
+          "formatted": "16 days",
+          "totalHours": 407
+        },
+        "reviewers": [
+          "martinweiler",
+          "pefernan"
+        ],
+        "labels": [],
+        "draft": false,
+        "createdAt": "2026-05-26T05:10:01Z",
+        "updatedAt": "2026-06-10T15:01:01Z",
+        "priority": "critical"
+      }
+    ]
+  },
+  "priorityPRs": [
+    {
+      "number": 6584,
+      "title": "[kie-issues#2110] BiLinear join node",
+      "url": "https://github.com/apache/incubator-kie-drools/pull/6584",
+      "author": "Rikkola",
+      "repository": "apache/incubator-kie-drools",
+      "age": {
+        "days": 127,
+        "hours": 15,
+        "formatted": "127 days",
+        "totalHours": 3063
+      },
+      "reviewers": [
+        "pibizza",
+        "yesamer"
+      ],
+      "labels": [
+        "Rules"
+      ],
+      "draft": false,
+      "createdAt": "2026-02-04T13:37:59Z",
+      "updatedAt": "2026-03-30T12:10:48Z",
+      "priority": "critical"
+    },
+    {
+      "number": 6222,
+      "title": "Reactivate turtle tests",
+      "url": "https://github.com/apache/incubator-kie-drools/pull/6222",
+      "author": "pibizza",
+      "repository": "apache/incubator-kie-drools",
+      "age": {
+        "days": 510,
+        "hours": 15,
+        "formatted": "510 days",
+        "totalHours": 12255
+      },
+      "reviewers": [
+        "jstastny-cz"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2025-01-17T13:44:47Z",
+      "updatedAt": "2026-01-05T16:04:26Z",
+      "priority": "critical"
+    },
+    {
+      "number": 4303,
+      "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4303",
+      "author": "josedee",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 17,
+        "hours": 13,
+        "formatted": "17 days",
+        "totalHours": 421
+      },
+      "reviewers": [
+        "martinweiler"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-05-25T15:39:11Z",
+      "updatedAt": "2026-06-09T11:01:10Z",
+      "priority": "critical"
+    },
+    {
+      "number": 4176,
+      "title": "[incubator-kie-issues#2229] Codegen refactoring to fix \"Code too large\" error for large projects",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4176",
+      "author": "mumi",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 134,
+        "hours": 17,
+        "formatted": "134 days",
+        "totalHours": 3233
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan",
+        "yesamer"
+      ],
+      "labels": [
+        "Do not merge"
+      ],
+      "draft": false,
+      "createdAt": "2026-01-28T11:14:57Z",
+      "updatedAt": "2026-03-26T10:20:30Z",
+      "priority": "critical"
+    },
+    {
+      "number": 4165,
+      "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/4165",
+      "author": "porcelli",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 150,
+        "hours": 6,
+        "formatted": "150 days",
+        "totalHours": 3606
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan",
+        "RishiRajAnand",
+        "fjtirado"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-01-12T22:45:20Z",
+      "updatedAt": "2026-02-04T04:15:13Z",
+      "priority": "critical"
+    },
+    {
+      "number": 3939,
+      "title": " Issue-3938 Upgrade the Knative custom functions to have visibility over the returned status code and headers",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3939",
+      "author": "oEscal",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 384,
+        "hours": 11,
+        "formatted": "384 days",
+        "totalHours": 9227
+      },
+      "reviewers": [
+        "gmunozfe",
+        "wmedvede"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2025-05-23T17:38:57Z",
+      "updatedAt": "2026-04-08T13:18:28Z",
+      "priority": "critical"
+    },
+    {
+      "number": 3742,
+      "title": "[incubator-kie-issues-1553] Centralize shared vars for different Github actions workflows",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/3742",
+      "author": "gmunozfe",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 598,
+        "hours": 16,
+        "formatted": "598 days",
+        "totalHours": 14368
+      },
+      "reviewers": [
+        "baldimir"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2024-10-21T12:13:13Z",
+      "updatedAt": "2025-11-03T21:00:34Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2932,
+      "title": "KOGITO-9001 Create new addon for custom dashboard",
+      "url": "https://github.com/apache/incubator-kie-kogito-runtimes/pull/2932",
+      "author": "bxf12315",
+      "repository": "apache/incubator-kie-kogito-runtimes",
+      "age": {
+        "days": 1154,
+        "hours": 14,
+        "formatted": "1154 days",
+        "totalHours": 27710
+      },
+      "reviewers": [
+        "cristianonicolai",
+        "paulovmr",
+        "nmirasch"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2023-04-14T14:28:21Z",
+      "updatedAt": "2023-04-24T07:33:21Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2339,
+      "title": "[incubator-kie-issues#2324] Record Service Task I/O Data",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2339",
+      "author": "josedee",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 16,
+        "hours": 23,
+        "formatted": "16 days",
+        "totalHours": 407
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-05-26T05:10:01Z",
+      "updatedAt": "2026-06-10T15:01:01Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2335,
+      "title": "[INFRA] Set up default rulesets for default and release branches",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2335",
+      "author": "asf-gitbox-commits",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 27,
+        "hours": 6,
+        "formatted": "27 days",
+        "totalHours": 654
+      },
+      "reviewers": [
+        "gitgabrio",
+        "pefernan",
+        "jstastny-cz",
+        "yesamer"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-05-15T22:03:12Z",
+      "updatedAt": "2026-05-19T08:32:54Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2328,
+      "title": "[Incubator-kie-issues#2323] Allow filtering schema on nested arrays",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2328",
+      "author": "GopikaReghunath",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 42,
+        "hours": 22,
+        "formatted": "42 days",
+        "totalHours": 1030
+      },
+      "reviewers": [
+        "pefernan"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-04-30T06:51:13Z",
+      "updatedAt": "2026-06-09T08:06:01Z",
+      "priority": "critical"
+    },
+    {
+      "number": 2297,
+      "title": "kie-issues#1914: remove Infinispan persistence related modules and dependencies",
+      "url": "https://github.com/apache/incubator-kie-kogito-apps/pull/2297",
+      "author": "porcelli",
+      "repository": "apache/incubator-kie-kogito-apps",
+      "age": {
+        "days": 150,
+        "hours": 6,
+        "formatted": "150 days",
+        "totalHours": 3606
+      },
+      "reviewers": [
+        "martinweiler",
+        "pefernan",
+        "RishiRajAnand"
+      ],
+      "labels": [],
+      "draft": false,
+      "createdAt": "2026-01-12T22:45:28Z",
+      "updatedAt": "2026-02-04T09:18:26Z",
+      "priority": "critical"
+    }
+  ]
+}

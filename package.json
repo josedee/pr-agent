@@ -1,0 +1,30 @@
+{
+  "name": "pr-agent",
+  "version": "1.0.0",
+  "description": "Automated PR review agent for GitHub repositories",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "pr",
+    "review",
+    "reminder",
+    "slack",
+    "email"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/graphql": "^8.1.1",
+    "@octokit/rest": "^21.0.2",
+    "@slack/webhook": "^7.0.3",
+    "js-yaml": "^4.1.0",
+    "nodemailer": "^8.0.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
