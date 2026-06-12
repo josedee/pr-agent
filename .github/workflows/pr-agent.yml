@@ -25,8 +25,8 @@ permissions:
   pull-requests: read
 
 jobs:
-  send-pr-reminders:
-    name: Send PR Notifications
+  pr-agent:
+    name: PR Agent
     runs-on: ubuntu-latest
     
     steps:
