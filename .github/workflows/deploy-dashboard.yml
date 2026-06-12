@@ -6,6 +6,11 @@ on:
     paths:
       - 'dashboard/**'
   workflow_dispatch:
+  workflow_run:
+    workflows: ["PR Agent"]
+    types:
+      - completed
+    branches: [main]
 
 permissions:
   contents: read
