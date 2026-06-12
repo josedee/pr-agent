@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option 2: Vibrant Gradient Style - PR Agent Dashboard</title>
+    <style>
+        /* Option 2: Vibrant Gradient Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 36px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            margin: 40px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .stat-icon {
+            font-size: 40px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+
+        .stat-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .last-updated {
+            text-align: right;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Filters */
+        .filters-section {
+            margin: 32px 0;
+        }
+
+        .filters-container {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 16px 12px 44px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .filter-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-color: transparent;
+            box-shadow: 0 8px 16px rgba(245, 87, 108, 0.4);
+        }
+
+        /* PR Cards */
+        .section-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 24px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .pr-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .pr-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .pr-card:hover {
+            transform: translateX(8px) translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .pr-header {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .pr-priority {
+            font-size: 24px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .pr-title {
+            flex: 1;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .pr-title:hover {
+            text-decoration: underline;
+        }
+
+        .pr-meta {
+            display: flex;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .pr-reviewers {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-tag {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.2s;
+        }
+
+        .reviewer-tag:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 8px rgba(245, 87, 108, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🤖</span>
+                    <h1>PR Agent Dashboard</h1>
+                </div>
+                <div class="header-actions">
+                    <button class="btn">
+                        <span>🔄</span>
+                        <span>Refresh</span>
+                    </button>
+                    <button class="btn">
+                        <span>🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Stats -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📋</div>
+                        <div>
+                            <div class="stat-value">42</div>
+                            <div class="stat-label">Total PRs</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Reviewers</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚠️</div>
+                        <div>
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Priority</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <div>
+                            <div class="stat-value">24h</div>
+                            <div class="stat-label">Avg Age</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-updated">Last updated: 2 minutes ago</div>
+            </section>
+
+            <!-- Filters -->
+            <section class="filters-section">
+                <div class="filters-container">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search PRs...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active">⚡ All PRs</button>
+                        <button class="filter-btn">🔥 Priority</button>
+                        <button class="filter-btn">👥 By Reviewer</button>
+                        <button class="filter-btn">📦 By Repository</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PR List -->
+            <section>
+                <h2 class="section-title">All Open PRs</h2>
+                <div class="pr-list">
+                    <div class="pr-card">
+                        <div class="pr-header">
+                            <span class="pr-priority">🔴</span>
+                            <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                        </div>
+                        <div class="pr-meta">
+                            <span>apache/incubator-kie-tools</span>
+                            <span>•</span>
+                            <span>#1234</span>
+                            <span>•</span>
+                            <span>3 days ago</span>
+                            <span class="badge">High Priority</span>
+                        </div>
+                        <div class="pr-reviewers">
+                            <span class="reviewer-tag">👤 @john-doe</span>
+                            <span class="reviewer-tag">👤 @jane-smith</span>
+                        </div>
+                    </div>
+
+                    <div class="pr-card">
+                        <div class="pr-header">
+                            <span class="pr-priority">🟡</span>
+                            <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                        </div>
+                        <div class="pr-meta">
+                            <span>apache/incubator-kie-kogito</span>
+                            <span>•</span>
+                            <span>#5678</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                        <div class="pr-reviewers">
+                            <span class="reviewer-tag">👤 @alice-jones</span>
+                        </div>
+                    </div>
+
+                    <div class="pr-card">
+                        <div class="pr-header">
+                            <span class="pr-priority">🟢</span>
+                            <a href="#" class="pr-title">Add unit tests for user service</a>
+                        </div>
+                        <div class="pr-meta">
+                            <span>apache/incubator-kie-drools</span>
+                            <span>•</span>
+                            <span>#9012</span>
+                            <span>•</span>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="pr-reviewers">
+                            <span class="reviewer-tag">👤 @bob-wilson</span>
+                            <span class="reviewer-tag">👤 @carol-davis</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div style="text-align: center; padding: 40px; color: rgba(255,255,255,0.9);">
+        <h2 style="color: #ffffff; margin-bottom: 16px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Option 2: Vibrant Gradient Style</h2>
+        <p style="font-weight: 500;">Colorful, modern, and eye-catching with smooth animations</p>
+    </div>
+</body>
+</html>

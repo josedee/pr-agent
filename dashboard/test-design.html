@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Agent Dashboard - Design Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="padding: 40px 20px;">
+        <h1 style="text-align: center; margin-bottom: 40px; background: linear-gradient(135deg, #0066cc 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            PR Agent Dashboard - Design Test
+        </h1>
+        
+        <div style="margin-bottom: 20px; text-align: center;">
+            <button onclick="document.documentElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark')" 
+                    style="padding: 10px 20px; background: #0066cc; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                Toggle Dark Mode
+            </button>
+        </div>
+
+        <!-- Test PR Cards -->
+        <div class="pr-list">
+            <!-- High Priority -->
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority priority-high"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                        <div class="pr-repo">apache/incubator-kie-tools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#1234</span>
+                        <span class="separator">·</span>
+                        <span>3 days ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">High Priority</span>
+                        <span class="reviewer-tag">@john-doe</span>
+                        <span class="reviewer-tag">@jane-smith</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medium Priority -->
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority priority-medium"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                        <div class="pr-repo">apache/incubator-kie-kogito</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#5678</span>
+                        <span class="separator">·</span>
+                        <span>2 days ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">Medium Priority</span>
+                        <span class="reviewer-tag">@alice</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Low Priority -->
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority priority-low"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Add documentation for new API endpoints</a>
+                        <div class="pr-repo">apache/incubator-kie-drools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#9012</span>
+                        <span class="separator">·</span>
+                        <span>1 day ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">Low Priority</span>
+                        <span class="reviewer-tag">@bob</span>
+                        <span class="reviewer-tag">@charlie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center; color: #666;">
+            <p>This is a test page to verify the design implementation.</p>
+            <p>Try hovering over the cards and toggling dark mode!</p>
+        </div>
+    </div>
+</body>
+</html>

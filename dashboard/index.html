@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PR Agent Dashboard</title>
+    <title>PR Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 </head>
@@ -13,16 +13,14 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">🤖</span>
-                    <h1>PR Agent Dashboard</h1>
+                    <h1>PR Dashboard</h1>
                 </div>
                 <div class="header-actions">
                     <button id="refreshBtn" class="btn btn-secondary" title="Refresh data">
-                        <span class="icon">🔄</span>
                         <span class="btn-text">Refresh</span>
                     </button>
                     <button id="themeToggle" class="btn btn-icon" title="Toggle theme">
-                        <span class="icon">🌙</span>
+                        <span class="icon">Dark</span>
                     </button>
                 </div>
             </div>
@@ -40,7 +38,6 @@
 
             <!-- Error State -->
             <div id="error" class="error-state" style="display: none;">
-                <div class="error-icon">⚠️</div>
                 <h2>Failed to Load Data</h2>
                 <p id="errorMessage"></p>
                 <button onclick="loadDashboardData()" class="btn btn-primary">Try Again</button>
@@ -52,31 +49,27 @@
                 <section class="stats-section">
                     <div class="stats-grid">
                         <div class="stat-card">
-                            <div class="stat-icon">📋</div>
                             <div class="stat-content">
                                 <div class="stat-value" id="totalPRs">0</div>
-                                <div class="stat-label">Total PRs</div>
+                                <div class="stat-label">Total Pull Requests</div>
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">👥</div>
                             <div class="stat-content">
                                 <div class="stat-value" id="totalReviewers">0</div>
-                                <div class="stat-label">Reviewers</div>
+                                <div class="stat-label">Active Reviewers</div>
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">⚠️</div>
                             <div class="stat-content">
                                 <div class="stat-value" id="priorityPRs">0</div>
-                                <div class="stat-label">Priority PRs</div>
+                                <div class="stat-label">Old PRs (>10 days)</div>
                             </div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-icon">⏱️</div>
                             <div class="stat-content">
-                                <div class="stat-value" id="avgAge">0h</div>
-                                <div class="stat-label">Avg Age</div>
+                                <div class="stat-value" id="oldestPR">0d</div>
+                                <div class="stat-label">Oldest PR</div>
                             </div>
                         </div>
                     </div>
@@ -89,7 +82,6 @@
                 <section class="filters-section">
                     <div class="filters-container">
                         <div class="search-box">
-                            <span class="search-icon">🔍</span>
                             <input type="text" id="searchInput" placeholder="Search PRs..." />
                         </div>
                         <div class="filter-buttons">
@@ -111,19 +103,23 @@
 
                     <!-- Priority PRs View -->
                     <div id="priorityView" class="view-container" style="display: none;">
-                        <h2 class="section-title">Priority PRs (3+ days old)</h2>
+                        <h2 class="section-title">Old PRs (10+ days old)</h2>
                         <div id="priorityPRsList" class="pr-list"></div>
                     </div>
 
                     <!-- By Reviewer View -->
                     <div id="reviewerView" class="view-container" style="display: none;">
-                        <h2 class="section-title">PRs by Reviewer</h2>
+                        <!-- Reviewer Filters -->
+                        <div id="reviewerFilters" class="reviewer-filters" style="display: none;"></div>
+                        
                         <div id="reviewerList" class="reviewer-list"></div>
                     </div>
 
                     <!-- By Repository View -->
                     <div id="repositoryView" class="view-container" style="display: none;">
-                        <h2 class="section-title">PRs by Repository</h2>
+                        <!-- Repository Filters -->
+                        <div id="repositoryFilters" class="repository-filters" style="display: none;"></div>
+                        
                         <div id="repositoryList" class="repository-list"></div>
                     </div>
                 </section>
@@ -134,7 +130,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p><a href="https://github.com" target="_blank">View on GitHub</a></p>
+            <p>Thats all for now !!!</p>
         </div>
     </footer>
 

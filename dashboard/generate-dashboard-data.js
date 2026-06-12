@@ -72,10 +72,9 @@ function formatPRForDashboard(pr) {
  */
 function getPriority(pr) {
   const days = pr.age.days;
-  if (days >= 7) return 'critical';
-  if (days >= 3) return 'high';
-  if (days >= 1) return 'medium';
-  return 'low';
+  if (days > 10) return 'old';
+  if (days > 3) return 'moderate';
+  return 'new';
 }
 
 /**

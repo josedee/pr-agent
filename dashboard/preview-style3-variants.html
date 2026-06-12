@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style 3 Variants: Line Indicators</title>
+    <style>
+        :root {
+            --accent-color: #0066cc;
+            --accent-light: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            padding: 40px 20px;
+        }
+
+        body.dark-mode {
+            background: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .pr-card {
+            padding: 24px;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        body.dark-mode .pr-card {
+            background: #2a2a2a;
+            border: 1px solid #3a3a3a;
+        }
+
+        .pr-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--accent-color) 0%, var(--accent-light) 100%);
+            border-radius: 12px 0 0 12px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .pr-card:hover::before {
+            opacity: 1;
+        }
+
+        .pr-card:hover {
+            border-color: var(--accent-light);
+            box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+            transform: translateX(4px);
+        }
+
+        .pr-header {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        body.dark-mode .pr-header {
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+        .pr-title-section {
+            flex: 1;
+        }
+
+        .pr-title {
+            font-size: 17px;
+            font-weight: 500;
+            color: #1a1a1a;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .pr-title:hover {
+            color: var(--accent-color);
+        }
+
+        body.dark-mode .pr-title {
+            color: #e0e0e0;
+        }
+
+        .pr-repo {
+            font-size: 13px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        body.dark-mode .pr-repo {
+            color: #999;
+        }
+
+        .pr-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .pr-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        .separator {
+            color: #ccc;
+        }
+
+        .pr-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 4px 12px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
+            color: white;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .reviewer-tag {
+            padding: 4px 12px;
+            background: rgba(0, 102, 204, 0.1);
+            color: var(--accent-color);
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 102, 204, 0.2);
+        }
+
+        /* Variant A: Vertical Line */
+        .variant-a .pr-priority {
+            width: 3px;
+            height: 40px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+        .variant-a .pr-priority.high {
+            background: linear-gradient(180deg, #dc3545 0%, #c82333 100%);
+            box-shadow: 0 0 8px rgba(220, 53, 69, 0.3);
+        }
+        .variant-a .pr-priority.medium {
+            background: linear-gradient(180deg, #ffc107 0%, #e0a800 100%);
+            box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+        }
+        .variant-a .pr-priority.low {
+            background: linear-gradient(180deg, #28a745 0%, #218838 100%);
+            box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Variant B: Horizontal Line (Top) */
+        .variant-b .pr-priority {
+            width: 60px;
+            height: 3px;
+            border-radius: 2px;
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+        .variant-b .pr-priority.high {
+            background: linear-gradient(90deg, #dc3545 0%, #c82333 100%);
+            box-shadow: 0 0 8px rgba(220, 53, 69, 0.3);
+        }
+        .variant-b .pr-priority.medium {
+            background: linear-gradient(90deg, #ffc107 0%, #e0a800 100%);
+            box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+        }
+        .variant-b .pr-priority.low {
+            background: linear-gradient(90deg, #28a745 0%, #218838 100%);
+            box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Variant C: Square */
+        .variant-c .pr-priority {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .variant-c .pr-priority.high {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            box-shadow: 0 0 8px rgba(220, 53, 69, 0.3);
+        }
+        .variant-c .pr-priority.medium {
+            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+            box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+        }
+        .variant-c .pr-priority.low {
+            background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+            box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Variant D: Diamond */
+        .variant-d .pr-priority {
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        .variant-d .pr-priority.high {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            box-shadow: 0 0 8px rgba(220, 53, 69, 0.3);
+        }
+        .variant-d .pr-priority.medium {
+            background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+            box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+        }
+        .variant-d .pr-priority.low {
+            background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+            box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">◐ Toggle Theme</button>
+    
+    <div class="container">
+        <h1>Style 3 Variants: Line & Shape Indicators</h1>
+        
+        <!-- Variant A: Vertical Line -->
+        <div class="section variant-a">
+            <h2 class="section-title">Variant A: Vertical Line</h2>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority high"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                        <div class="pr-repo">apache/incubator-kie-tools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#1234</span>
+                        <span class="separator">·</span>
+                        <span>3 days ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">High Priority</span>
+                        <span class="reviewer-tag">@john-doe</span>
+                        <span class="reviewer-tag">@jane-smith</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority medium"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                        <div class="pr-repo">apache/incubator-kie-kogito</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#5678</span>
+                        <span class="separator">·</span>
+                        <span>1 day ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@alice-jones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority low"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Add unit tests for user service</a>
+                        <div class="pr-repo">apache/incubator-kie-drools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#9012</span>
+                        <span class="separator">·</span>
+                        <span>5 hours ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@bob-wilson</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Variant B: Horizontal Line -->
+        <div class="section variant-b">
+            <h2 class="section-title">Variant B: Horizontal Line</h2>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority high"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                        <div class="pr-repo">apache/incubator-kie-tools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#1234</span>
+                        <span class="separator">·</span>
+                        <span>3 days ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">High Priority</span>
+                        <span class="reviewer-tag">@john-doe</span>
+                        <span class="reviewer-tag">@jane-smith</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority medium"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                        <div class="pr-repo">apache/incubator-kie-kogito</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#5678</span>
+                        <span class="separator">·</span>
+                        <span>1 day ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@alice-jones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority low"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Add unit tests for user service</a>
+                        <div class="pr-repo">apache/incubator-kie-drools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#9012</span>
+                        <span class="separator">·</span>
+                        <span>5 hours ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@bob-wilson</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Variant C: Square -->
+        <div class="section variant-c">
+            <h2 class="section-title">Variant C: Rounded Square</h2>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority high"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                        <div class="pr-repo">apache/incubator-kie-tools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#1234</span>
+                        <span class="separator">·</span>
+                        <span>3 days ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">High Priority</span>
+                        <span class="reviewer-tag">@john-doe</span>
+                        <span class="reviewer-tag">@jane-smith</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority medium"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                        <div class="pr-repo">apache/incubator-kie-kogito</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#5678</span>
+                        <span class="separator">·</span>
+                        <span>1 day ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@alice-jones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority low"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Add unit tests for user service</a>
+                        <div class="pr-repo">apache/incubator-kie-drools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#9012</span>
+                        <span class="separator">·</span>
+                        <span>5 hours ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@bob-wilson</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Variant D: Diamond -->
+        <div class="section variant-d">
+            <h2 class="section-title">Variant D: Diamond Shape</h2>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority high"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                        <div class="pr-repo">apache/incubator-kie-tools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#1234</span>
+                        <span class="separator">·</span>
+                        <span>3 days ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="badge">High Priority</span>
+                        <span class="reviewer-tag">@john-doe</span>
+                        <span class="reviewer-tag">@jane-smith</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority medium"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                        <div class="pr-repo">apache/incubator-kie-kogito</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#5678</span>
+                        <span class="separator">·</span>
+                        <span>1 day ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@alice-jones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pr-card">
+                <div class="pr-header">
+                    <span class="pr-priority low"></span>
+                    <div class="pr-title-section">
+                        <a href="#" class="pr-title">Add unit tests for user service</a>
+                        <div class="pr-repo">apache/incubator-kie-drools</div>
+                    </div>
+                </div>
+                <div class="pr-footer">
+                    <div class="pr-meta">
+                        <span>#9012</span>
+                        <span class="separator">·</span>
+                        <span>5 hours ago</span>
+                    </div>
+                    <div class="pr-actions">
+                        <span class="reviewer-tag">@bob-wilson</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Layout 1: Compact Inline</title>
+    <style>
+        /* Blue Gradient - Layout 1: Compact Inline */
+        :root {
+            --accent-color: #0066cc;
+            --accent-light: #3b82f6;
+            --accent-lighter: #60a5fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        body.dark-mode {
+            background: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pr-card {
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        body.dark-mode .pr-card {
+            background: #2a2a2a;
+            border: 1px solid #3a3a3a;
+        }
+
+        .pr-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--accent-color) 0%, var(--accent-light) 100%);
+            border-radius: 12px 0 0 12px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .pr-card:hover::before {
+            opacity: 1;
+        }
+
+        .pr-card:hover {
+            border-color: var(--accent-light);
+            box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+            transform: translateX(4px);
+        }
+
+        /* Layout 1: Everything in one line with separators */
+        .pr-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .pr-priority {
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .pr-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a1a;
+            text-decoration: none;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .pr-title:hover {
+            color: var(--accent-color);
+        }
+
+        body.dark-mode .pr-title {
+            color: #e0e0e0;
+        }
+
+        .pr-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #999;
+            font-size: 13px;
+            flex-wrap: wrap;
+        }
+
+        body.dark-mode .pr-meta {
+            color: #666;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .separator {
+            color: #ccc;
+        }
+
+        .badge {
+            padding: 3px 10px;
+            background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
+            color: white;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .reviewer-tag {
+            padding: 3px 10px;
+            background: rgba(0, 102, 204, 0.1);
+            color: var(--accent-color);
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 102, 204, 0.2);
+        }
+
+        body.dark-mode .reviewer-tag {
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: var(--accent-lighter);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">◐ Toggle Theme</button>
+    
+    <div class="container">
+        <h1>Layout 1: Compact Inline</h1>
+        
+        <div class="pr-card">
+            <div class="pr-content">
+                <span class="pr-priority">●</span>
+                <a href="#" class="pr-title">Fix critical authentication bug in login flow</a>
+                <div class="pr-meta">
+                    <span class="meta-item">apache/incubator-kie-tools</span>
+                    <span class="separator">·</span>
+                    <span class="meta-item">#1234</span>
+                    <span class="separator">·</span>
+                    <span class="meta-item">3 days ago</span>
+                    <span class="badge">High Priority</span>
+                    <span class="reviewer-tag">@john-doe</span>
+                    <span class="reviewer-tag">@jane-smith</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pr-card">
+            <div class="pr-content">
+                <span class="pr-priority">●</span>
+                <a href="#" class="pr-title">Update dependencies to latest versions</a>
+                <div class="pr-meta">
+                    <span class="meta-item">apache/incubator-kie-kogito</span>
+                    <span class="separator">·</span>
+                    <span class="meta-item">#5678</span>
+                    <span class="separator">·</span>
+                    <span class="meta-item">1 day ago</span>
+                    <span class="reviewer-tag">@alice-jones</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pr-card">
+            <div class="pr-content">
+                <span class="pr-priority">●</span>
+                <a href="#" class="pr-title">Add unit tests for user service</a>
+                <div class="pr-meta">
+                    <span class="meta-item">apache/incubator-kie-drools</span>
+                    <span class="separator">·</span>
+                    <span class="meta-item">#9012</span>
+                    <span class="separator">·</span>
+                    <span class="meta-item">5 hours ago</span>
+                    <span class="reviewer-tag">@bob-wilson</span>
+                    <span class="reviewer-tag">@carol-davis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
+        });
+    </script>
+</body>
+</html>

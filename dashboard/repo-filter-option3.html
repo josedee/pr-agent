@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository Filter - Option 3: Checkbox List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            padding: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        
+        .description {
+            color: #666;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+        
+        /* Option 3: Checkbox List */
+        .filter-container {
+            margin-bottom: 24px;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .filter-header:hover .filter-label {
+            color: #0066cc;
+        }
+        
+        .filter-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
+        }
+        
+        .toggle-icon {
+            font-size: 12px;
+            color: #666;
+            transition: transform 0.2s ease;
+        }
+        
+        .filter-header.expanded .toggle-icon {
+            transform: rotate(180deg);
+        }
+        
+        .checkbox-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 8px;
+            margin-top: 12px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .checkbox-item:hover {
+            background: #e8f4ff;
+            border-color: #0066cc;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            cursor: pointer;
+            accent-color: #0066cc;
+        }
+        
+        .checkbox-label {
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            flex: 1;
+        }
+        
+        .checkbox-item input[type="checkbox"]:checked + .checkbox-label {
+            color: #0066cc;
+            font-weight: 500;
+        }
+        
+        .pr-count-badge {
+            font-size: 12px;
+            color: #666;
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+        
+        .checkbox-item:hover .pr-count-badge {
+            background: #d4e9ff;
+            color: #0066cc;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        
+        .action-btn {
+            padding: 6px 12px;
+            background: transparent;
+            color: #0066cc;
+            border: 1px solid #0066cc;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .action-btn:hover {
+            background: #0066cc;
+            color: white;
+        }
+        
+        .action-btn.clear {
+            color: #dc3545;
+            border-color: #dc3545;
+        }
+        
+        .action-btn.clear:hover {
+            background: #dc3545;
+            color: white;
+        }
+        
+        /* Sample repository groups */
+        .repo-group {
+            margin-bottom: 24px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+        }
+        
+        .repo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .repo-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .pr-count {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Option 3: Checkbox List</h1>
+        <p class="description">Collapsible checkbox list with repository names. Best for precise multi-selection.</p>
+        
+        <div class="filter-container">
+            <div class="filter-header expanded">
+                <span class="filter-label">Filter by Repository:</span>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="checkbox-list">
+                <label class="checkbox-item">
+                    <input type="checkbox" checked>
+                    <span class="checkbox-label">owner/frontend-app</span>
+                    <span class="pr-count-badge">3</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox">
+                    <span class="checkbox-label">owner/backend-api</span>
+                    <span class="pr-count-badge">5</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" checked>
+                    <span class="checkbox-label">owner/mobile-app</span>
+                    <span class="pr-count-badge">2</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox">
+                    <span class="checkbox-label">owner/data-pipeline</span>
+                    <span class="pr-count-badge">4</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox">
+                    <span class="checkbox-label">owner/infrastructure</span>
+                    <span class="pr-count-badge">1</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox">
+                    <span class="checkbox-label">owner/analytics-service</span>
+                    <span class="pr-count-badge">6</span>
+                </label>
+            </div>
+            <div class="actions">
+                <button class="action-btn">Select All</button>
+                <button class="action-btn clear">Clear All</button>
+            </div>
+        </div>
+        
+        <div class="repo-group">
+            <div class="repo-header">
+                <span class="repo-name">owner/frontend-app</span>
+                <span class="pr-count">3 PRs</span>
+            </div>
+        </div>
+        
+        <div class="repo-group">
+            <div class="repo-header">
+                <span class="repo-name">owner/mobile-app</span>
+                <span class="pr-count">2 PRs</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

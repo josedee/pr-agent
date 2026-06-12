@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Header - Option 3: Underline with Icon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            padding: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        
+        .description {
+            color: #666;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+        
+        /* Option 3: Underline with Icon */
+        .group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 3px solid #0066cc;
+            position: relative;
+        }
+        
+        .group-header::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #0066cc 0%, transparent 100%);
+        }
+        
+        .group-title-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .group-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #0066cc 0%, #3b82f6 100%);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .group-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: -0.3px;
+        }
+        
+        .group-count {
+            background: linear-gradient(135deg, #0066cc 0%, #3b82f6 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        /* Sample PR card */
+        .pr-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .pr-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        
+        .pr-meta {
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Option 3: Underline with Icon</h1>
+        <p class="description">Large bold text with icon badge and prominent blue underline.</p>
+        
+        <div class="group-header">
+            <div class="group-title-wrapper">
+                <div class="group-icon">R</div>
+                <span class="group-title">RishiRajAnand</span>
+            </div>
+            <span class="group-count">3 PRs</span>
+        </div>
+        
+        <div class="pr-card">
+            <div class="pr-title">Fix authentication bug in login flow</div>
+            <div class="pr-meta">owner/frontend-app • 2 days old</div>
+        </div>
+        
+        <div class="pr-card">
+            <div class="pr-title">Add user profile validation</div>
+            <div class="pr-meta">owner/backend-api • 5 days old</div>
+        </div>
+        
+        <div class="group-header" style="margin-top: 40px;">
+            <div class="group-title-wrapper">
+                <div class="group-icon">📦</div>
+                <span class="group-title">owner/mobile-app</span>
+            </div>
+            <span class="group-count">2 PRs</span>
+        </div>
+        
+        <div class="pr-card">
+            <div class="pr-title">Update dependencies to latest versions</div>
+            <div class="pr-meta">owner/mobile-app • 1 day old</div>
+        </div>
+    </div>
+</body>
+</html>
