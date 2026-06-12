@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12T16:47:04.023Z",
+  "generated": "2026-06-12T16:56:49.734Z",
   "stats": {
     "totalPRs": 13,
     "avgPRAge": 6137,
@@ -46,7 +46,7 @@
         "name": "apache/incubator-kie-kogito-apps",
         "count": 4,
         "avgAge": 1436,
-        "totalHours": 5744
+        "totalHours": 5745
       }
     ]
   },
@@ -307,9 +307,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 43,
-        "hours": 9,
+        "hours": 10,
         "formatted": "43 days",
-        "totalHours": 1041
+        "totalHours": 1042
       },
       "reviewers": [
         "pefernan"
@@ -712,9 +712,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 43,
-          "hours": 9,
+          "hours": 10,
           "formatted": "43 days",
-          "totalHours": 1041
+          "totalHours": 1042
         },
         "reviewers": [
           "pefernan"
@@ -1259,9 +1259,9 @@
         "repository": "apache/incubator-kie-kogito-apps",
         "age": {
           "days": 43,
-          "hours": 9,
+          "hours": 10,
           "formatted": "43 days",
-          "totalHours": 1041
+          "totalHours": 1042
         },
         "reviewers": [
           "pefernan"
@@ -1556,9 +1556,9 @@
       "repository": "apache/incubator-kie-kogito-apps",
       "age": {
         "days": 43,
-        "hours": 9,
+        "hours": 10,
         "formatted": "43 days",
-        "totalHours": 1041
+        "totalHours": 1042
       },
       "reviewers": [
         "pefernan"
